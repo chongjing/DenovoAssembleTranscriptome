@@ -2,7 +2,7 @@
 
 
 
-This project is to de novo assemble a transcriptome for samples of nematode at three different stages - ppJ2, pJ2 and pJ3, using `Trinity`. Detailed usage is [here](https://github.com/trinityrnaseq/trinityrnaseq/wiki).
+This project is to de novo assemble a transcriptome for samples of nematode at three different stages - ppJ2, pJ2 and pJ3, using `Trinity`. Please note, only assembly/transcript was generated, no gene structure was predicted in this pipeline. Detailed usage is [here](https://github.com/trinityrnaseq/trinityrnaseq/wiki).
 
 ## 0. Preparation
 
