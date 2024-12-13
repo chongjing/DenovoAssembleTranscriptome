@@ -1,10 +1,10 @@
 # DenovoAssembleTranscriptome
 
-# 
+
 
 This project is to de novo assemble a transcriptome for samples of nematode at three different stages - ppJ2, pJ2 and pJ3, using `Trinity`. Detailed usage is [here](https://github.com/trinityrnaseq/trinityrnaseq/wiki).
 
-## 0.Preparation
+## 0. Preparation
 
 Trinity installation. Luckily we have `docker` in Hydrogen node13. 
 
@@ -13,7 +13,7 @@ cd /data/pathology/program/Trinity
 docker pull trinityrnaseq/trinityrnaseq
 ```
 
-## 1.pJ2
+## 1. pJ2
 
 Raw reads were filtered and trimmed to get high quality reads using `Trimmomatic (v0.39)`. Briefly, the bases with quality less than 20 at the start or end of a read were cut off, and reads with length shorter than 60bp were dropped.
 
@@ -52,7 +52,7 @@ for sample in pJ2_Hs1 pJ2_Hs2 pJ2_Hs3; do
 done
 ```
 
-## 2.pJ3
+## 2. pJ3
 
 ```bash
 # run Trimmomatic and Trinity together iterate through each sample
@@ -82,7 +82,7 @@ for sample in Hs1 Hs2 Hs3 Hs4; do
 done
 ```
 
-## 3.ppJ2
+## 3. ppJ2
 
 ```bash
 cd /data/pathology/cxia/projects/Sebastian/03.DenovoTranscriptome/01.TrimmedData/01.ppJ2/
@@ -113,7 +113,7 @@ for sample in Hs3 Hs4 Hs5; do
 done
 ```
 
-## 4.Results
+## 4. Results
 
 ```bash
 ## pJ2 assembled transcriptomes:
